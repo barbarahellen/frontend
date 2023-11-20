@@ -202,6 +202,6 @@ JavaScript:
 - Alert() – para mostrar mensagem ao usuário;
 - Template Strings – para usar strings junto com expressões;
 
-[Código](https://https://github.com/barbarahellen/dev-web/blob/main/javascript/calculadora/calculadora.js)
+[Código](https://github.com/barbarahellen/dev-web/blob/main/javascript/calculadora/calculadora.js)
 
 </details>
