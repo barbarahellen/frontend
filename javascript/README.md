@@ -78,6 +78,8 @@ Para fazermos uma comparação de valores e tipos em JavaScript usamos “===“
 
 <details>
 <summary>✅ Operadores</summary>
+
+### Operadores matemáticos:
 São tipos de operadores matemáticos com valor numérico:
 
 - adição: +
@@ -87,7 +89,7 @@ São tipos de operadores matemáticos com valor numérico:
 - divisão inteira: %
 - potenciação: **
 
-### Operadores relacionais
+### Operadores relacionais:
 São tipos de operadores que consultam a relação entre valores:
 
 - maior que: >
@@ -95,7 +97,7 @@ São tipos de operadores que consultam a relação entre valores:
 - maior ou igual a: >=
 - menor ou igual a: <=
 
-### Operadores lógicos
+### Operadores lógicos:
 São tipos de operadores que consultam valores lógicos:
 
 - && - “e” – considera que todos os valores sejam true;
@@ -107,6 +109,8 @@ São tipos de operadores que consultam valores lógicos:
 
 <details>
     <summary>✅ Vetores ou arrays:</summary>
+
+### Arrays:
 Arrays são um tipo de lista, ou matriz de variáveis, onde cada variável possui um índice. Os valores podem ser de vários tipos.
 ```
 let array = ['string', 1, true, ['array1']...]
@@ -128,7 +132,9 @@ Ao ser declarado, o Array traz consigo uma série de métodos para manipulá-lo.
 </details>
 
 <details>
-    <summary>✅ Objetos: </summary>
+    <summary>✅ Objetos e Classes </summary>
+
+### Objetos
 Dados que possuem propriedades e valores que definem suas características. Deve ser declarado entre chaves “{}”.
 
 Ex.: imagine uma xícara azul. Ela tem cor, pode ter vários tamanhos e funções. Pode ser declarada assim:
@@ -159,7 +165,7 @@ var { cor, tamanho, funcao } = xicara;
 
 
 <details>
-<summary>✅ Funções: </summary>
+<summary>✅ Funções </summary>
 
 ### Funções declarativas
 São funções que possuem o uso mais comum, deve ser declarada usando a palavra reservada “function” seguida do nome da
@@ -193,7 +199,9 @@ var funcao = () => {
 </details>
 
 <details>
-<summary>✅ Criando uma calculadora</summary>
+<summary>✅ Exercício 1</summary>
+
+### Criando um acalculadora
 Para este exercício vamos utilizar alguns métodos nativos do
 JavaScript:
 
@@ -202,6 +210,6 @@ JavaScript:
 - Alert() – para mostrar mensagem ao usuário;
 - Template Strings – para usar strings junto com expressões;
 
-[Código](https://github.com/barbarahellen/dev-web/blob/main/javascript/calculadora/calculadora.js)
+[Clique aqui para ver o código](https://github.com/barbarahellen/dev-web/blob/main/javascript/calculadora/calculadora.js)
 
 </details>
