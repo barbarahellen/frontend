@@ -201,7 +201,7 @@ var funcao = () => {
 <details>
 <summary>✅ Exercício 1</summary>
 
-### Criando um acalculadora
+### Criando uma calculadora
 Para este exercício vamos utilizar alguns métodos nativos do
 JavaScript:
 
