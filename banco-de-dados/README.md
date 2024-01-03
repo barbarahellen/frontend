@@ -138,29 +138,27 @@ devem ser consideradas na modelagem.
 
 [App Diagrams](https://app.diagrams.net/)
 
-### -> Relacionamento 1-1 (Um para um)
-Acontece quando cada coisa em um lado está conectada a apenas uma coisa do outro lado.
-
-![Alt text](image-2.png)
-
-### -> Relacionamento 1-N (Um para muitos)
-Acontece quando algo de um lado está relacionado a várias coisas do outro lado.
-
-![Alt text](image-3.png)
-
-### -> Relacionamento N-N (Muitos para muitos)
-Acontece quando muitas coisas de um lado estão relacionadas a muitas coisas do outro lado.
-
-![Alt text](image-4.png)
-
-
-### Cardinalidade
+### Cardinalidade:
 
 Refere-se a forma como as entidades se relacionam umas com as outras, e indica o número máximo de instâncias ou ocorrências que pode ter de uma entidade associada a outra.
 
-- Relacionamento 1..1 (um para um): uma instância de uma entidade pode estar associada no máximo a uma instância de uma outra entidade.
-- Relacionamento 1..n ou 1..* (um para muitos): uma instância de uma entidade pode estar associada a várias outras instâncias das outras entidades.
-- Relacionamento n..n ou **..** (muitos para muitos): várias instâncias de várias entidades estão associadas a várias outras instâncias de várias entidades.
+### Relacionamento 1-1 (um para um):
+uma instância de uma entidade pode estar associada no máximo a uma instância de uma outra entidade.
+
+![Alt text](image-2.png)
+
+### Relacionamento 1-N (um para muitos):
+uma instância de uma entidade pode estar associada a várias outras instâncias das outras entidades.
+
+![Alt text](image-3.png)
+
+
+### Relacionamento N-N (muitos para muitos):
+
+várias instâncias de várias entidades estão associadas a várias outras instâncias de várias entidades.
+
+![Alt text](image-4.png)
+
 
 ## Tabelas, colunas e registros
 
