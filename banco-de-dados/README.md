@@ -314,3 +314,65 @@ Neste caso, o comando `ALTER TABLE` permite adicionar a chave estrangeira apó
 Independentemente do método escolhido, as chaves estrangeiras desempenham um papel fundamental na garantia da integridade dos dados em seu banco de dados MariaDB, tornando possível a criação de relacionamentos significativos entre tabelas. Lembre-se de fazer backup de seus dados antes de realizar qualquer alteração na estrutura da tabela para evitar a perda acidental de informações.
 
 </details>
+
+<details>
+<summary>⚙️ Linguagem de Manipulação de Dados (DML)</summary>
+
+### Linguagem de Manipulação de Dados (DML)
+A Linguagem de Manipulação de Dados (DML) é um conjunto de comandos que permite aos usuários recuperar, inserir, atualizar e excluir dados de um banco de dados. É uma parte essencial do uso do sistema de gerenciamento de banco de dados relacional. Vamos explorar os principais comandos DML e como eles podem ser aplicados.
+
+### INSERT - Inserindo Dados
+
+O comando `INSERT INTO` é utilizado para adicionar novos registros a uma tabela. Você deve especificar os valores que deseja inserir nas colunas correspondentes. Por exemplo, para inserir um novo cliente na tabela "Clientes", você pode fazer o seguinte:
+![Alt text](img/manipulação/image.png)
+
+
+A sintaxe apresentada na Figura 1 é composta pelas palavras reservadas "INSERT INTO", que indicam ao SGBD a intenção do utilizador de inserir um novo registro em uma tabela. Em seguida, segue o nome da tabela, como no exemplo "clientes". Posteriormente, listam-se as colunas que se deseja inserir entre parênteses, separadas por vírgulas. A palavra reservada "VALUES" é utilizada, seguida pelos valores que se desejam inserir, também entre parênteses e separados por vírgulas. A linha de comando sempre deve ser finalizada com um ";" para indicar ao sistema o ponto de encerramento da query.
+
+### SELECT - Recuperando Dados
+
+O comando `SELECT` é usado para recuperar dados de tabelas em um banco de dados. Ele permite que você especifique as colunas que deseja recuperar, as tabelas nas quais deseja buscar e as condições de filtragem. Por exemplo, para selecionar todos os clientes de uma tabela "Clientes", você pode usar o comando:
+![Alt text](img/manipulação/image2.png)
+
+
+No exemplo anterior, a consulta `SELECT` é usada para recuperar os registros inseridos na base de dados. Observem que sua sintaxe é bastante simplificada. A estrutura da consulta é composta pela palavra reservada `SELECT`, seguida das colunas separadas por vírgulas, da palavra `FROM` seguida pelo nome da tabela e finalizada com o ponto e vírgula (`;`) para encerrar a consulta. Caso deseje consultar todas as colunas de uma tabela, pode-se utilizar o asterisco (*) no lugar das colunas, como exemplificado a seguir:
+![Alt text](img/manipulação/image3.png)
+
+
+### WHERE - Filtrando Dados
+
+A cláusula `WHERE` é um componente fundamental dos comandos SQL. Essa cláusula é usada para filtrar os resultados das consultas, permitindo que você especifique condições que determinam quais registros devem ser selecionados, atualizados ou excluídos. A cláusula `WHERE` oferece grande flexibilidade e controle sobre o processamento dos dados. Vejamos alguns aspectos chaves do `WHERE`. A principal função da cláusula `WHERE` é filtrar os resultados da consulta. Ela permite que você especifique condições que os registros devem atender para serem incluídos no conjunto de resultados. Por exemplo, você pode recuperar apenas os clientes com um determinado sobrenome, atualizar apenas os produtos com um determinado preço, ou excluir registros que atendam a uma condição específica.
+
+### Operadores de comparação
+
+A cláusula `WHERE` suporta uma variedade de operadores de comparação, como igual (`=`), diferente (`!=`), maior que (`>`), menor que (`<`), maior ou igual (`>=`), menor ou igual (<=), `LIKE`, IN,  entre outros. Esses operadores permitem criar condições complexas e expressivas para filtragem de dados.
+
+### Condições Compostas
+
+Você pode criar condições compostas usando operadores lógicos como `AND`, `OR` e `NOT`. Isso permite combinar várias condições para refinar ainda mais os resultados. Por exemplo, você pode selecionar registros onde o valor é maior que X e menor que Y.
+
+Em um cenário hipotético de marketing direcionado utilizando a base de dados criada, a consulta SQL a seguir pode ser usada para filtrar os clientes que atendam aos requisitos de serem usuários do Gmail com idades entre 18 e 35 anos:
+![Alt text](img/manipulação/image4.png)
+
+
+A consulta anterior retornará os registros de clientes que possuem endereços de e-mail do Gmail e têm idades entre 18 e 35 anos, permitindo direcionar o marketing de forma específica a esse grupo.
+
+Analisando o exemplo apresentado na Figura 4, percebe-se que o `WHERE` foi utilizado para aplicar um filtro com base na idade e no e-mail. O operador `AND` exige que todas as condições sejam atendidas para o registro ser retornado. Além disso, é usada a condição LIKE que permite a busca de uma substring. Neste caso, foram procuradas palavras que terminavam em "@gmail.com". No entanto, o filtro também pode ser utilizado para buscar palavras no meio de uma frase, por exemplo,`%gmail%` que traria todos os textos que contivessem "gmail" em seu conteúdo.
+
+### UPDATE - Atualizando Dados
+
+O comando `UPDATE` é usado para modificar os dados existentes em uma tabela. Você deve especificar a tabela, as colunas a serem atualizadas, os novos valores e as condições que determinam quais registros devem ser atualizados. Por exemplo, para atualizar o e-mail de um cliente específico:
+![Alt text](img/manipulação/image5.png)
+
+
+Ao analisar o exemplo apresentado na FIGURA 5, podemos observar que ele é iniciado pela palavra reservada `UPDATE`, seguida pelo nome da tabela que se deseja atualizar. Logo após, temos a palavra `SET` e, por fim, os campos que devem ser atualizados, acompanhados de seus respectivos novos valores, separados por vírgula. No final, a cláusula `WHERE` é algo indispensável nesse contexto, pois o `UPDATE` sem o `WHERE` atualizaria o e-mail e idade de todos os registros da base.
+
+### DELETE - Excluindo Dados
+
+O comando `DELETE` é utilizado para remover registros de uma tabela. Você deve especificar a tabela e as condições que determinam quais registros devem ser excluídos. Por exemplo, para excluir um cliente pelo seu ID:
+![Alt text](img/manipulação/image6.png)
+
+
+No exemplo anterior, é apresentado um exemplo de DELETE, que segue a mesma estrutura do SELECT, mas sem a especificação de colunas. Após o comando DELETE, você deve fornecer a palavra `FROM`, seguida do nome da tabela e a condição`WHERE`. A falta da condição `WHERE` implica na exclusão de todos os registros dessa tabela. Vale ressaltar que após a exclusão de um registro, no caso de colunas com `AUTO_INCREMENT`, a chave primária não será reutilizada. Ou seja, se você tiver quatro registros em uma determinada tabela e excluir o quarto, o próximo registro continuará possuindo o id cinco, mesmo que o `id` quatro não exista mais.
+
+</details>
