@@ -199,6 +199,38 @@ var funcao = () => {
 </details>
 
 <details>
+<summary>✅ DOM</summary>
+
+### DOM (Document Object Model)
+O DOM é a representação de dados dos objetos que compõem a estrutura e o conteúdo de um documento na Web.
+
+### Árvore DOM
+exemplo:
+![](img/árvoreDom.jpg)
+
+
+### Selecionar componentes pelo JavaScript
+Seleciona todos os elementos da tela que tenham a tag "img"<br>
+```let img = document.getElementsByTagName('img')```
+
+Seleciona o primeiro elemento da tela que tenha a tag "img"<br>
+```let img = document.getElementsByTagName('img')[0]```
+
+Seleciona os elementos pela classe<br>
+```let img = document.getElementsByClassName('loading')```
+
+Seleciona o elemento pelo identificador (id)<br>
+```let img = document.getElementById('imgload')```
+
+Seleciona um elemento por Query<br>
+```let img = document.querySelector('img[src="load.png"]')```
+
+Seleciona todos os elementos por Query - traz uma lista<br>
+```let img = document.querySelectorAll('img[src="load.png"]')```
+
+</details>
+
+<details>
 <summary>✅ Exercício 1</summary>
 
 ### Criando uma calculadora
