@@ -14,15 +14,20 @@ function createAlert(msg, tipo = 'sucesso'){
         img.src = 'error.png';
         h3.classList.add('error');
     }
+    const close = document.createElement('span')
+    close.classList.add('close')
+    close.textContent = 'X'
+    close.setAttribute('onclick', 'this.parentElement.remove()')
     // em ordem
+
     h3.appendChild(img)
     h3.appendChild(text) // adiciona dentro do elemento
+    h3.appendChild(close)
     // h1.insertAdjacentElement('beforebegin', h3) // adiciona antes do elemento
     h1.insertAdjacentElement('afterend', h3) // adiciona após o elemento
 
-    setTimeout(function(){
-        h3.remove();
-    }, 5000);
+
+
     return h3
 }
 
@@ -53,3 +58,12 @@ function logar(){
     }
 }
 
+function mudarCor(elemento, cor = 'red'){
+    if(elemento.getAttribute('cor') == cor){
+        elemento.style.backgroundColor = '';
+        elemento.setAttribute('cor', '');
+    }else{
+        elemento.style.backgroundColor = cor;
+        elemento.setAttribute('cor', cor);
+    }
+}
