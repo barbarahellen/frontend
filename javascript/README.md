@@ -231,7 +231,7 @@ Seleciona todos os elementos por Query - traz uma lista<br>
 </details>
 
 <details>
-<summary>✅ Exercício 1</summary>
+<summary>✅ Exercícios</summary>
 
 ### Criando uma calculadora
 Para este exercício vamos utilizar alguns métodos nativos do
@@ -242,6 +242,11 @@ JavaScript:
 - Alert() – para mostrar mensagem ao usuário;
 - Template Strings – para usar strings junto com expressões;
 
-[Clique aqui para ver o código](https://github.com/barbarahellen/dev-web/blob/main/javascript/calculadora/calculadora.js)
+[Clique aqui para ver o código](https://github.com/barbarahellen/frontend/tree/main/javascript/exerc%C3%ADcios/calculadora)
+
+
+### Criando um relógio analógico
+[Clique aqui para ver o código](https://github.com/barbarahellen/frontend/tree/main/javascript/exerc%C3%ADcios/rel%C3%B3gio)
+
 
 </details>
