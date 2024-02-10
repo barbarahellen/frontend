@@ -5,4 +5,3 @@ Repositório para armazenar conteúdos dos meus estudos sobre Front-end.<br>
 - [JavaScript](https://github.com/barbarahellen/dev-web/tree/main/javascript)
 - [Banco de dados](https://github.com/barbarahellen/frontend/tree/main/banco-de-dados)
 - [PHP]()
-- [Angular]()
