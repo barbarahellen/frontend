@@ -1,0 +1,3 @@
+Nome: bárbara
+idade: 22
+altura: 1.50

@@ -165,7 +165,7 @@ var { cor, tamanho, funcao } = xicara;
 
 
 <details>
-<summary>✅ Funções </summary>
+    <summary>✅ Funções </summary>
 
 ### Funções declarativas
 São funções que possuem o uso mais comum, deve ser declarada usando a palavra reservada “function” seguida do nome da
@@ -196,8 +196,33 @@ var funcao = () => {
     ${instrucao};
 }
 ```
+
+### First Class Function
+Uma linguagem de programação tem First Class Function quando as funções nessa linguagem são tratadas como qualquer outra variável. Por exemplo, uma função pode ser passada como parâmetro para outra função, assim como pode ser retornada por uma função e esse retorno pode ser atribuído a uma variável.
+
+
+### High Order Function
+é uma função que recebe outra função como parâmetro/argumento, ou uma função que retorna outra função.
+
 </details>
 
+<details>
+<summary>✅ Assincronismo</summary>
+
+### Assincronismo
+Em JavaScript, a programação assíncrona pode ser aplicada de três formas:
+1. Por Callbacks (função de retorno ou chamada de retorno);
+2. Por promises (promessas);
+3. Resolvendo promises utilizando async/await.
+
+- Promise: é um objeto que guarda uma promessa de que algo será realizado.
+    - É útil para os casos em que estamos lidando com operações assíncronas:
+    - A promise está em algum dos estados abaixo:
+        1. Pending: A promise foi iniciada, mas está pendente.
+        2. Fullfield: A promise foi concretizada com sucesso.
+        3. Rejected: A promise foi rejeitada, porque houve um erro
+    - Exemplo de utilização: pegar dados do back-end (API).
+</details>
 <details>
 <summary>✅ DOM</summary>
 
